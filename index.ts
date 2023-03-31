@@ -4,6 +4,7 @@ export const assert = require('assert')
 type Domain = string
 type FilterMethodKeys = 'identical' | 'numberic' | 'hex' | 'ignored' | 'unordered' | 'date'
 type FilterAction = (name: Domain) => string | null
+type DetectPatternsFunction = InstanceType<typeof TextFilter>['detectPatterns']
 //#endregion
 
 //#region Prediction
